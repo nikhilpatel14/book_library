@@ -1,0 +1,62 @@
+<div class="outercontainer">
+    <mat-card class="container">
+    <div style="width: 100%;">
+    <p>
+        <mat-toolbar color="primary">
+        <span>Register With Us</span>
+        </mat-toolbar>
+    </p>
+    </div>
+    <form [formGroup]="loginForm" > 
+
+        <mat-form-field  appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput
+            formControlName="username"
+            >
+        </mat-form-field>
+        <div class="error">
+        {{getUsernameError()}}
+        </div>
+
+        <br>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput
+            formControlName="password"
+            >
+        </mat-form-field>
+        <div class="error">
+            {{getPasswordError()}}
+        </div>
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>Email Id</mat-label>
+            <input matInput
+            formControlName="email"
+            >
+        </mat-form-field>
+        <div class="error">
+            {{getEmailError()}}
+        </div>
+
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>Phone no</mat-label>
+            <input matInput
+            formControlName="phone"
+            >
+        </mat-form-field>
+        <div class="error">
+            {{getPhoneError()}}
+        </div>
+        <br>
+        <button (click)="register()" style="margin-left:30%"  class="button"  mat-raised-button color="primary">REGISTER</button>
+    </form>
+    </mat-card>
+
+
+</div>

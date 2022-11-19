@@ -1,0 +1,13 @@
+
+<mat-toolbar color="primary">
+    <span class="home" (click)="loadDashboard()" >Dashboard</span>
+    
+    <button  (click)="showCompleted()" style="margin-left:50%" mat-raised-button>Completed</button>
+    <button (click)="showWishListed()"  style="margin-left:3%" mat-raised-button>Wish Listed</button>
+     <button (click)="loadDashboard()"  style="margin-left:3%" mat-raised-button>All books</button>
+    <button (click)="logout()"  style="margin-left:3%" mat-raised-button>Logout</button>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
+

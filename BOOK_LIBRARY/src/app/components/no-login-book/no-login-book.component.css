@@ -1,0 +1,20 @@
+.cardcontent{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    margin: 0px 20px;
+    height: 25px;
+
+}
+.description{
+    width:60%;
+    height: 25px;
+}
+
+.card{
+    margin: 5px 5px;
+    height: 120px;
+}

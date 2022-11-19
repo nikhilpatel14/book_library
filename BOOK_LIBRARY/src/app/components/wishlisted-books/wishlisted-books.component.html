@@ -1,0 +1,10 @@
+<mat-card class="container">
+    <div class="items">
+<mat-toolbar color="primary">
+    <span>WishListed Books</span>
+
+</mat-toolbar>
+
+<app-no-login-book  [book]="wishlistedBook" *ngFor="let wishlistedBook of wishListedBooks" ></app-no-login-book>
+</div>
+</mat-card>
